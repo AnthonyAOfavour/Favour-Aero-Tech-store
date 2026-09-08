@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Favour Aero Tech Store | Premium RC Parts Nigeria</title>
+  <meta name="description" content="Favour Aero Tech Store – High-quality RC planes, drones, motors, batteries and aero parts in Nigeria. Custom orders available.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-inner">
+      <a href="#home" class="logo">
+        <span class="logo-icon">✈</span>
+        <span class="logo-text">Favour Aero Tech</span>
+      </a>
+      <nav class="nav" id="nav">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#bestsellers" class="nav-link">Best Sellers</a>
+        <a href="#catalog" class="nav-link">Catalog</a>
+        <a href="#custom" class="nav-link">Custom Orders</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="container hero-content">
+      <div class="hero-text">
+        <p class="hero-badge">Premium RC Parts • Nigeria</p>
+        <h1>High-Quality RC Parts for Serious Enthusiasts</h1>
+        <p class="hero-desc">
+          Favour Aero Tech Store supplies reliable motors, batteries, airframes, and electronics trusted by hobbyists and professionals across Nigeria. Fast shipping, genuine quality, and expert support.
+        </p>
+        <div class="hero-actions">
+          <a href="#catalog" class="btn btn-primary">Browse Catalog</a>
+          <a href="#custom" class="btn btn-outline">Request Custom Order</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-card">
+          <div class="hero-card-icon">🚀</div>
+          <h3>Performance Ready</h3>
+          <p>Parts selected for durability and precision</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust strip -->
+  <section class="trust">
+    <div class="container trust-grid">
+      <div class="trust-item">
+        <span class="trust-icon">✓</span>
+        <div>
+          <strong>Genuine Quality</strong>
+          <span>Verified suppliers only</span>
+        </div>
+      </div>
+      <div class="trust-item">
+        <span class="trust-icon">🚚</span>
+        <div>
+          <strong>Nationwide Delivery</strong>
+          <span>Across Nigeria</span>
+        </div>
+      </div>
+      <div class="trust-item">
+        <span class="trust-icon">💬</span>
+        <div>
+          <strong>Expert Support</strong>
+          <span>Guidance for every build</span>
+        </div>
+      </div>
+      <div class="trust-item">
+        <span class="trust-icon">🔧</span>
+        <div>
+          <strong>Custom Orders</strong>
+          <span>Parts tailored to your needs</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Best Sellers -->
+  <section class="section" id="bestsellers">
+    <div class="container">
+      <div class="section-header">
+        <h2>Best-Selling Products</h2>
+        <p>Top choices from RC pilots and builders across Nigeria</p>
+      </div>
+      <div class="product-grid" id="bestsellersGrid">
+        <!-- Products injected by JS -->
+      </div>
+      <div class="section-cta">
+        <a href="#catalog" class="btn btn-primary">View Full Catalog</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Catalog -->
+  <section class="section section-alt" id="catalog">
+    <div class="container">
+      <div class="section-header">
+        <h2>Product Catalog</h2>
+        <p>Browse by category — motors, batteries, airframes, electronics & more</p>
+      </div>
+      <div class="category-tabs" id="categoryTabs">
+        <button class="tab active" data-category="all">All</button>
+        <button class="tab" data-category="motors">Motors</button>
+        <button class="tab" data-category="batteries">Batteries</button>
+        <button class="tab" data-category="airframes">Airframes</button>
+        <button class="tab" data-category="electronics">Electronics</button>
+        <button class="tab" data-category="props">Props & Accessories</button>
+      </div>
+      <div class="product-grid" id="catalogGrid">
+        <!-- Products injected by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Custom Orders -->
+  <section class="section custom-section" id="custom">
+    <div class="container custom-inner">
+      <div class="custom-text">
+        <h2>Need Something Specific?</h2>
+        <p>
+          Looking for a rare motor, a custom battery pack, or a complete airframe kit? We source high-quality RC parts on request. Tell us what you need and we’ll get back to you with availability and pricing.
+        </p>
+        <ul class="custom-list">
+          <li>Hard-to-find components</li>
+          <li>Matched power systems</li>
+          <li>Bulk & club orders</li>
+          <li>Technical advice included</li>
+        </ul>
+      </div>
+      <form class="custom-form" id="customForm">
+        <h3>Request a Custom Quote</h3>
+        <div class="form-row">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" required placeholder="Your name">
+        </div>
+        <div class="form-row">
+          <label for="email">Email or WhatsApp</label>
+          <input type="text" id="email" name="email" required placeholder="email@example.com or +234...">
+        </div>
+        <div class="form-row">
+          <label for="details">What do you need?</label>
+          <textarea id="details" name="details" rows="4" required placeholder="Describe the part, model, quantity, or build..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Submit Request</button>
+        <p class="form-note">We’ll respond within 24–48 hours.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <h2>Contact Us</h2>
+        <p>Questions about products, shipping, or custom orders? Reach out anytime.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-card">
+          <div class="contact-icon">📧</div>
+          <h3>Email</h3>
+          <p><a href="mailto:orders@favouraerotech.ng">orders@favouraerotech.ng</a></p>
+        </div>
+        <div class="contact-card">
+          <div class="contact-icon">📱</div>
+          <h3>WhatsApp / Phone</h3>
+          <p><a href="https://wa.me/2348000000000">+234 800 000 0000</a></p>
+        </div>
+        <div class="contact-card">
+          <div class="contact-icon">📍</div>
+          <h3>Location</h3>
+          <p>Lagos, Nigeria<br>Nationwide delivery available</p>
+        </div>
+        <div class="contact-card">
+          <div class="contact-icon">🕒</div>
+          <h3>Hours</h3>
+          <p>Mon – Sat: 9am – 6pm<br>Sunday: Closed</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="logo-icon">✈</span>
+        <strong>Favour Aero Tech Store</strong>
+        <p>High-quality RC parts for Nigeria’s aero enthusiasts.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#bestsellers">Best Sellers</a>
+        <a href="#catalog">Catalog</a>
+        <a href="#custom">Custom Orders</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <p class="footer-copy">© 2026 Favour Aero Tech Store. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Toast -->
+  <div class="toast" id="toast" role="status"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+  
